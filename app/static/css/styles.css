@@ -1,0 +1,11 @@
+body { font-family: system-ui, Arial, sans-serif; margin: 20px; color:#222; }
+header h1 { margin:0 0 12px 0; }
+label { display:block; margin:8px 0; }
+input { padding:6px; width: 280px; max-width:100%; }
+button { padding:8px 12px; }
+table { border-collapse: collapse; width:100%; margin-top:12px; }
+table th, table td { border:1px solid #ddd; padding:6px 8px; text-align:left; }
+.flash { padding:8px; margin:6px 0; border-radius:4px; }
+.flash.success { background:#e6ffed; border:1px solid #b1f0c6; }
+.flash.warning { background:#fff8e6; border:1px solid #ffe8a8; }
+.flash.danger { background:#ffecec; border:1px solid #f5b6b6; }

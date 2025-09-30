@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+  <section class="info">
+    <p><strong>Server DNS</strong>: {{ dns }}</p>
+  </section>
+
+  <section class="insert">
+    <h2>Insert new row</h2>
+    <form method="post" action="{{ url_for('insert') }}" id="insertForm">
+      <label>Key
+        <input name="key" type="text" required pattern="[A-Za-z0-9]+" title="Alphanumeric only" maxlength="64">
+      </label>
+      <label>Value
+        <input name="value" type="text" required pattern="[A-Za-z0-9]+" title="Alphanumeric only" maxlength="255">
+      </label>
+      <button type="submit">Insert</button>
+    </form>
+  </section>
+
+  <section class="list">
+    <h2>Rows</h2>
+    {% include 'list.html' %}
+  </section>
+{% endblock %}
